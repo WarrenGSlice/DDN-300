@@ -5,7 +5,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.ComponentScan;
 
 //Inializes the Web Application
-@ComponentScan({"com.gcuCLC"})
+@ComponentScan({"com.test"})
 @SpringBootApplication
 public class WebsiteTestPageApplication {
 

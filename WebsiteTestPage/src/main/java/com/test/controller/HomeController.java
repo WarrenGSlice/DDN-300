@@ -8,6 +8,7 @@ package com.test.controller;
  * * * * * * * * * * * * * * * **/ 
 
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
@@ -26,9 +27,22 @@ public class HomeController {
     	return "index";
     }
     
-    @RequestMapping("/trial")
-    public String tryMe() {
-    	return "trial";
-    }
+	/*
+	 * @GetMapping("/releasedate") public String GetReleaseDate(Model model) {
+	 * return "releasedate.html"; }
+	 * 
+	 * @GetMapping("/aboutme") public String GetAboutMe() { return "aboutme.html"; }
+	 * 
+	 * @GetMapping("/contactus") public String GetContactUs() { return
+	 * "contactus.html"; }
+	 * 
+	 * @GetMapping("/content") public String Content() { return "content.html"; }
+	 * 
+	 * @GetMapping("/otherworks") public String GetOtherWorks() { return
+	 * "otherworks.html"; }
+	 * 
+	 * @GetMapping("/preorder") public String GetPreOrder() { return
+	 * "preorder.html"; }
+	 */
 
 }
