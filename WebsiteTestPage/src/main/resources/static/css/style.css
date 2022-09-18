@@ -328,35 +328,35 @@ h5 {
 /** Responsive **/
 @media screen and (max-width: 3850px) and(min-width: 2640px){
 	.container {
-		width: 100%;
+		width: 125%;
 		height:auto;
 		margin-top:250px;
 	}
 	.vidvid{
-		width: 75%;
-		right:-10%;
+		width: 125%;
+		right:11%;
 	}
 }
 @media screen and (max-width: 2640px){
 
 	.container {
-		width: 70%;
+		width: 125%;
 		margin: 0 auto;
 	}
 	.vidvid{
-		width: 75%;
-		right:-10%;
+		width: 125%;
+		right:11%;
 	}
 }
 @media screen and (max-width: 1920px){
 
 	.container {
-		width: 70%;
+		width: 125%;
 		margin: 0 auto;
 	}
 	.vidvid{
-		width: 75%;
-		right:-11%;
+		width: 125%;
+		right: 11%;
 	}
 }
 @media screen and (max-width: 1440px){
