@@ -326,7 +326,18 @@ h5 {
     color: #fff;
 }
 /** Responsive **/
-@media screen and (max-width: 3850px) and(min-width: 2640px){
+@media screen and (max-width: 7000px){
+	.container {
+		width: 125%;
+		height:auto;
+		margin-top:250px;
+	}
+	.vidvid{
+		width: 125%;
+		right:11%;
+	}
+}
+@media screen and (max-width: 3850px){
 	.container {
 		width: 125%;
 		height:auto;
@@ -361,43 +372,43 @@ h5 {
 }
 @media screen and (max-width: 1440px){
 	.container {
-		width: 70%;
+		width: 110%;
 		margin: 0 auto;
 	}
 	.vidvid{
-		width: 75%;
-		right:-11%;
+		width: 110%;
+		right:5%;
 	}
 }
 @media screen and (max-width: 1366px){
 	.container {
-		width: 75%;
+		width: 110%;
 	}
 	.left_grid_info h1 {
-		font-size: 40px;
+		font-size: 250%;
 	}
 	.vidvid{
-		width: 75%;
-		right:-11%;
+		width: 110%;
+		right:5%;
 	}
 }
 @media screen and (max-width: 1080px){
 	.container {
-		width: 80%;
+		width: 110%;
 	}
 	.w3_info h2 {
 		font-size: 24px;
 		letter-spacing: 1px;
 	}
 	.left_grid_info h1 {
-		font-size: 35px;
+		font-size: 218.75%;
 	}
 	.w3_info {
 		padding: 3em 3em;
 	}
 	.vidvid{
-		width: 75%;
-		right:-11%;
+		width: 110%;
+		right:5%;
 	}
 }
 @media screen and (max-width: 1024px){
@@ -405,15 +416,15 @@ h5 {
 		padding: 1em 0;
 	}
 	.container {
-		width: 85%;
+		width: 110%;
 	}
 	.left_grid_info {
 		padding-right: 3em;
 		padding-top: 2em;
 	}
 	.vidvid{
-		width: 75%;
-		right:-11%;
+		width: 110%;
+		right:5%;
 	}
 }
 @media screen and (max-width: 991px){
@@ -425,14 +436,14 @@ h5 {
 		letter-spacing: 2px;
 	}
 	.vidvid{
-		width: 75%;
-		right:-11%;
+		width: 100%;
+		right:5%;
 	}
 }
 @media screen and (max-width: 900px){
 	
 	.container {
-		width: 90%;
+		width: 100%;
 	}
 	.left_grid_info h4 {
 		font-size: 1em;
@@ -441,13 +452,13 @@ h5 {
 		padding: 3em 2.5em;
 	}
 	.vidvid{
-		width: 75%;
-		right:-11%;
+		width: 100%;
+		right:5%;
 	}
 }
 @media screen and (max-width: 800px){
 	.container {
-		width: 95%;
+		width: 100%;
 	}
 	input[type="text"],input[type="username"],input[type="password"], input[type="altText"], input[type="email"] {
 		font-size: 14px;
@@ -460,8 +471,8 @@ h5 {
 		font-size: 23px;
 	}
 	.vidvid{
-		width: 75%;
-		right:-11%;
+		width: 100%;
+		right:5%;
 	}
 }
 @media screen and (max-width: 768px){
