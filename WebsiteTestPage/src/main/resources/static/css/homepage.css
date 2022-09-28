@@ -147,3 +147,14 @@ body, html {
   width: 150%;
 
 }
+
+.w3-vert {
+  height: 200px;
+  position: relative;
+  text-align:center;
+  margin-top:10%;
+}
+
+.w3-vert h1, .w3-vert p{
+	margin-top:33%;
+}
