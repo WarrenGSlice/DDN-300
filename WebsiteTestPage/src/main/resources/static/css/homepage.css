@@ -21,20 +21,20 @@ body, html {
   width:100%;
 }
 
-/* Second image (Portfolio) */
+/* Second image (Author) */
 .bgimg-2 {
-  background-image: url("https://i.imgur.com/Cx1YiOd.png");
-  /* min-height: 100%;
-  min-width:100%; */
+  background-image: url("https://i.imgur.com/VIy33Rh.jpg");
+  height: 100%;
+  width: 100%;
 }
 /* .bgimg-2 {
   background-image: url("https://cdnb.artstation.com/p/assets/images/images/001/670/825/large/etienne-beschet-the-land-of-ethereal-dreams.jpg?1453056910");
   min-height: 400px;
 } */
 
-/* Third image (Contact) */
+/* Third image (Book) */
 .bgimg-3 {
-  background-image: url("https://i.imgur.com/jpfSUae.png");
+  background-image: url("https://i.imgur.com/aTEgaw8.jpg");
   height: 100%;
   width:100%;
 }
@@ -43,20 +43,60 @@ body, html {
   min-height: 400px;
 } */
 
-/* Fourth image (TBD) */
+/* Fourth image (Other works) */
 .bgimg-4 {
-	background-image: url("https://i.imgur.com/uF72Y6d.png");
+	background-image: url("https://i.imgur.com/MvNx6qK.jpg");
 	height:100%;
 	width:100%;
 }
 
-/* Fifth image (TBD) */
+/* Fifth image (Artwork) */
 .bgimg-5{
-	background-image: url("https://i.imgur.com/23m0Trs.png");
+	background-image: url("https://i.imgur.com/WIUYXDe.jpg");
 	height:100%;
 	width:100%;
 }
 
+/* Container One for Author section*/
+.tpc-1{
+	background-image: url("/images/Asset%20.png");
+	height:100%;
+	width:100%;
+    background-size: 98% 92%;
+	background-position: center;
+	background-repeat:no-repeat;
+	
+}
+
+/* Container Two for Book section*/
+.tpc-2{
+	background-image: url("/images/grey%20transparent.png");
+	height:100%;
+	width:100%;
+    background-size: 98% 92%;
+	background-position: center;
+	background-repeat:no-repeat;
+}
+
+/* Container Three for other works section*/
+.tpc-3{
+	background-image: url("/images/grey%20transparent.png");
+	height:100%;
+	width:100%;
+    background-size: 98% 92%;
+	background-position: center;
+	background-repeat:no-repeat;
+}
+
+/* Container Four for Artwork section */
+.tpc-4{
+	background-image: url("/images/more%20red.png");
+	height:100%;
+	width:100%;
+    background-size: 98% 92%;
+	background-position: center;
+	background-repeat:no-repeat;
+}
 .w3-wide {letter-spacing: 10px;}
 .w3-hover-opacity {cursor: pointer;}
 
