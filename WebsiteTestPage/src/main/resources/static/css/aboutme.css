@@ -18,11 +18,11 @@ body, html {
 
 /* First image (Logo. Full height) */
 .bgimg-1 {
-  background-image: url('https://i.imgur.com/biFOAKq.png');
-  min-height: 90%;
-  max-height: 95%;
-  margin: 50px;
-  
+  background-image: url('https://i.imgur.com/WIUYXDe.jpg');
+  height:100%;
+  width:100%;
+  margin-top: 50px;
+
 }
 
 /* Second image (Portfolio) */
@@ -35,6 +35,29 @@ body, html {
 .bgimg-3 {
   background-image: url("https://i.imgur.com/0eDVZbW.png");
   min-height: 100%;
+}
+
+/* Container For Image Carousel */ 
+.ajc-1{
+	background-image: url("/images/more%20grey.png");
+	height:100%;
+	width:100%;
+    background-size: 98% 92%;
+	background-position: center;
+	background-repeat:no-repeat;
+}
+/* Container For About Jay main image container*/
+.ajm-1{
+	background-image: url("https://i.imgur.com/NXZR5O4.png");
+	height:100%;
+	width:100%;
+    background-size: 98% 92%;
+	background-position: center;
+	background-repeat:no-repeat;
+
+	overflow:visible;
+	left:0;
+	right:0;
 }
 
 .w3-wide {letter-spacing: 10px;}
