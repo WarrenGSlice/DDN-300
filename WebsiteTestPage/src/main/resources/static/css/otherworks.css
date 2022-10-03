@@ -20,6 +20,8 @@ body, html {
   min-height: 90%;
   max-height: 95%;
   margin:0;
+  margin-top:50px;
+  margin-bottom:50px;
 }
 
 /* Second image (Portfolio) */
