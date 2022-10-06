@@ -12,32 +12,35 @@
 <link rel="stylesheet" type="text/css" th:href="@{/webjars/bootstrap/css/bootstrap.min.css}"/>
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
 <link rel="stylesheet" href="/css/style.css">
+<script src="/js/javascript.js"></script>
 <body>
 
 <!-- Navbar (sit on top) -->
 <div th:replace="layouts/home-navbar :: home-navbar"></div>
-
+<canvas id="heart"></canvas>
 <!-- First Parallax Image with Logo Text -->
-<div class="bgimg-1 w3-display-container " id="home">
+<div class="bgimg-1 w3-display-container " id="home" >
 
 
 
 
 
-  <div class="w3-display-middle" style="white-space:nowrap;">
+  <div class="w3-display-middle" style="white-space:nowrap;" >
   	<!-- 3d Model that my friend made, have an idea for interactive shoe viewer -->
   	<div class="sketchfab-embed-wrapper"> 
-  	<div class="box" style="position:relative"  > 
-  	<img src="https://i.imgur.com/IT64IaK.png" height="100%" >
-  	</div> </div>
+  		<div class="box" style="position:relative"  > 
+  			<img src="https://i.imgur.com/IT64IaK.png" height="100%" >
+  		</div> 
+  	</div>
 	<!-- <video class="vidvid"   style=" position:relative" autoplay muted>
 	
 	<source src="https://i.imgur.com/OGgTtv0.mp4" type="video/mp4"/> 
 	</video>
 	-->
 
-    
+ 
   </div>
+ 
 </div>
 
 <!-- Container (About Section) -->
@@ -92,6 +95,7 @@
     Orders Delivered with our solution
   </div>
 </div> -->
+
 
 <!-- Second Parallax Image with Portfolio Text -->
 <div class="bgimg-2 w3-display-container ">
@@ -259,6 +263,7 @@
 </footer>
  
 <script>
+
 // Modal Image Gallery
 function onClick(element) {
   document.getElementById("img01").src = element.src;
@@ -276,6 +281,17 @@ function myFunction() {
     } else {
         navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
     }
+}
+
+var prevScrollpos = window.pageYOffset;
+window.onscroll = function() {
+  var currentScrollPos = window.pageYOffset;
+  if (prevScrollpos > currentScrollPos) {
+    document.getElementById("heart").style.top = "100%";
+  } else {
+    document.getElementById("heart").style.top = "-100%";
+  }
+  prevScrollpos = currentScrollPos;
 }
 
 // Used to toggle the menu on small screens when clicking on the menu button

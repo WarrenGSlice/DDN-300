@@ -14,6 +14,13 @@
 <link rel="stylesheet" type="text/css" th:href="@{/webjars/bootstrap/css/bootstrap.min.css}"/>
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
 <link rel="stylesheet" href="/css/style.css">
+<script>
+!function(o,c){
+	var n=c.documentElement,t=" w-mod-";
+	n.className+=t+"js",("ontouchstart"in o||o.DocumentTouch&&c instanceof DocumentTouch)&&(n.className+=t+"touch")
+}
+(window,document);
+</script>
 <body>
 
 <!-- Navbar (sit on top) -->
@@ -159,7 +166,7 @@
 	<div class="tpc-1 w3-padding-64" >
 	<section style="transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;" class="section wf-section">
 		<div class="container-default w-container">
-		<div class="home-about-wrapper" style="display:flex; justify-content:space-between;align-items:center">
+		<div class="home-about-wrapper" style="display:flex; justify-content:space-between;align-items:center;">
 			<div class="home-about-left">
 				<h2 class="title home-about">
 					Hello, my name is Jay. I am an Author, writer, comic developer and
@@ -173,7 +180,7 @@
 					I hope you enjoy reading my book as much as I have enjoyed writing
 					<span class="text-no-wrap">them.</span>
 				</p>
-				<a href="/aboutme" class="button-secondary w-button ">More about me</a>
+				<a href="/aboutme" class="button-secondary w-button w3-hover-gold">More about me</a>
 			</div>
 			<div data-w-id="179d80db-6c03-3f11-de07-0734cce67b06" class="home-about-right">
 				<img src="http://1.bp.blogspot.com/-ysYV46BRwWQ/U4KqjidD7TI/AAAAAAAAHDc/OITenrKhTeg/s1600/DickensWritingsmall.JPG" 
@@ -181,9 +188,16 @@
 					480.56817626953125px" srcset="http://1.bp.blogspot.com/-ysYV46BRwWQ/U4KqjidD7TI/AAAAAAAAHDc/OITenrKhTeg/s1600/DickensWritingsmall.JPG 800w, 
 					https://assets.website-files.com/613b673e4173314657551861/613bdf2436aa8c6f6766e48d_image-1-home-about-video-x-template.jpg 964w" 
 					alt="About Video Creator - Creator X Webflow Template" class="image home-about-1" 
-					style="will-change: transform; transform: translate3d(0px, -3.286px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); 
-					transform-style: preserve-3d; max-width:83%; display:inline-block; border-radius: 40px; border-top-left-radius: 40px; border-top-right-radius: 40px; border-bottom-right-radius: 40px;
-   					 border-bottom-left-radius: 40px;">
+					style="will-change: transform; 
+					transform: translate3d(0px, -3.286px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); 
+					transform-style: preserve-3d; 
+					max-width:83%; 
+					display:inline-block; 
+					border-radius: 40px; 
+					border-top-left-radius: 40px; 
+					border-top-right-radius: 40px; 
+					border-bottom-right-radius: 40px;
+   					border-bottom-left-radius: 40px;">
 				<img src="https://i.imgur.com/yngBhkx.png" 
 					loading="eager" sizes="(max-width: 479px) 68vw, (max-width: 767px) 67vw, (max-width: 991px) 434.24713134765625px, (max-width: 1919px) 27vw, 370.553955078125px" 
 					srcset="https://149645218.v2.pressablecdn.com/wp-content/uploads/2020/09/Copy-of-SAFAF-2X1-images-2020-09-18T173938.309.jpg 500w, 
