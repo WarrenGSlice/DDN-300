@@ -10,6 +10,7 @@
 <!-- Head Section -->
 <head th:replace="layouts/head-section :: head-section"></head>
 <link rel="stylesheet" type="text/css" href="/css/homepage.css">
+<link rel="stylesheet" type="text/css" href="/css/normalize.css">
 <link rel="stylesheet" type="text/css" th:href="@{/webjars/bootstrap/css/bootstrap.min.css}"/>
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
 <link rel="stylesheet" href="/css/style.css">
@@ -116,9 +117,9 @@
 
 
 <!-- Second Parallax Image with Portfolio Text -->
-<div class="bgimg-2 w3-display-container ">
+<!-- <div class="bgimg-2 w3-display-container ">
 	
-	<!-- <img src="/images/Asset%20.png" style="width:100%; height:100%; object-fit: contain; padding:20px; "> -->
+	<img src="/images/Asset%20.png" style="width:100%; height:100%; object-fit: contain; padding:20px; ">
 	<div class="tpc-1">
 	
 		<div class="split left">
@@ -149,7 +150,98 @@
     		<span class="w3-xxlarge w3-text-black w3-wide"style="color:black; font-weight:bold"> </span> 
   		</div>
   	</div>
+</div> -->
+
+<!-- About section for large and medium screens -->
+<div class="bgimg-2 w3-display-container w3-hide-small ">
+	
+	<!-- <img src="/images/Asset%20.png" style="width:100%; height:100%; object-fit: contain; padding:20px; "> -->
+	<div class="tpc-1 w3-padding-64" >
+	<section style="transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;" class="section wf-section">
+		<div class="container-default w-container">
+		<div class="home-about-wrapper" style="display:flex; justify-content:space-between;align-items:center">
+			<div class="home-about-left">
+				<h2 class="title home-about">
+					Hello, my name is Jay. I am an Author, writer, comic developer and
+					<span class="text-no-wrap">content creator.</span>
+				</h2>
+				<p class="paragraph home-about">
+					I'm a family man and currently take care of my wife and child 
+					who are the most important parts of my world. They have supported 
+					my journey to becoming an author and now I get to share my works
+					with the rest of you. This is a very exciting time in my life.  
+					I hope you enjoy reading my book as much as I have enjoyed writing
+					<span class="text-no-wrap">them.</span>
+				</p>
+				<a href="/aboutme" class="button-secondary w-button ">More about me</a>
+			</div>
+			<div data-w-id="179d80db-6c03-3f11-de07-0734cce67b06" class="home-about-right">
+				<img src="http://1.bp.blogspot.com/-ysYV46BRwWQ/U4KqjidD7TI/AAAAAAAAHDc/OITenrKhTeg/s1600/DickensWritingsmall.JPG" 
+					loading="eager" sizes="(max-width: 479px) 73vw, (max-width: 767px) 72vw, (max-width: 991px) 463.1960144042969px, (max-width: 1919px) 35vw, 
+					480.56817626953125px" srcset="http://1.bp.blogspot.com/-ysYV46BRwWQ/U4KqjidD7TI/AAAAAAAAHDc/OITenrKhTeg/s1600/DickensWritingsmall.JPG 800w, 
+					https://assets.website-files.com/613b673e4173314657551861/613bdf2436aa8c6f6766e48d_image-1-home-about-video-x-template.jpg 964w" 
+					alt="About Video Creator - Creator X Webflow Template" class="image home-about-1" 
+					style="will-change: transform; transform: translate3d(0px, -3.286px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); 
+					transform-style: preserve-3d; max-width:83%; display:inline-block; border-radius: 40px; border-top-left-radius: 40px; border-top-right-radius: 40px; border-bottom-right-radius: 40px;
+   					 border-bottom-left-radius: 40px;">
+				<img src="https://i.imgur.com/yngBhkx.png" 
+					loading="eager" sizes="(max-width: 479px) 68vw, (max-width: 767px) 67vw, (max-width: 991px) 434.24713134765625px, (max-width: 1919px) 27vw, 370.553955078125px" 
+					srcset="https://149645218.v2.pressablecdn.com/wp-content/uploads/2020/09/Copy-of-SAFAF-2X1-images-2020-09-18T173938.309.jpg 500w, 
+					https://149645218.v2.pressablecdn.com/wp-content/uploads/2020/09/Copy-of-SAFAF-2X1-images-2020-09-18T173938.309.jpg 742w" alt="Video Creator - Creator X Webflow Template" 
+					class="image home-about-2" style="will-change: transform; transform: translate3d(0px, 3.286px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); 
+					transform-style: preserve-3d; display:inline-block; position: absolute; left: 0px; bottom: 0px; max-width: 64%; border-radius: 32px; box-shadow: 0 4px 54px 0 rgb(0 0 0 / 90%);">
+			</div>
+		</div>
+		</div>
+		</section>
+  	</div>
 </div>
+
+<!-- About section for small screens -->
+<div class="bgimg-2 w3-display-container w3-hide-medium w3-hide-large " style="height:150%">
+	
+	<!-- <img src="/images/Asset%20.png" style="width:100%; height:100%; object-fit: contain; padding:20px; "> -->
+	<div class="tpc-1 w3-padding-64" >
+	<section style="transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;" class="section wf-section">
+		<div class="container-default w-container">
+		<div class="home-about-wrapper" style="display:flex; justify-content:space-between;align-items:center">
+			<div class="home-about-left">
+				<h2 class="title home-about">
+					Hello, my name is Jay. I am an Author, writer, comic developer and
+					<span class="text-no-wrap">content creator.</span>
+				</h2>
+				<p class="paragraph home-about">
+					I'm a family man and currently take care of my wife and child 
+					who are the most important parts of my world. They have supported 
+					my journey to becoming an author and now I get to share my works
+					with the rest of you. This is a very exciting time in my life.  
+					I hope you enjoy reading my book as much as I have enjoyed writing
+					<span class="text-no-wrap">them.</span>
+				</p>
+				<a href="/aboutme" class="button-secondary w-button w3-hover-gold">More about me</a>
+			</div>
+			<div data-w-id="179d80db-6c03-3f11-de07-0734cce67b06" class="home-about-right">
+				<img src="http://1.bp.blogspot.com/-ysYV46BRwWQ/U4KqjidD7TI/AAAAAAAAHDc/OITenrKhTeg/s1600/DickensWritingsmall.JPG" 
+					loading="eager" sizes="(max-width: 479px) 73vw, (max-width: 767px) 72vw, (max-width: 991px) 463.1960144042969px, (max-width: 1919px) 35vw, 
+					480.56817626953125px" srcset="http://1.bp.blogspot.com/-ysYV46BRwWQ/U4KqjidD7TI/AAAAAAAAHDc/OITenrKhTeg/s1600/DickensWritingsmall.JPG 800w, 
+					https://assets.website-files.com/613b673e4173314657551861/613bdf2436aa8c6f6766e48d_image-1-home-about-video-x-template.jpg 964w" 
+					alt="About Video Creator - Creator X Webflow Template" class="image home-about-1" 
+					style="will-change: transform; transform: translate3d(0px, -3.286px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); 
+					transform-style: preserve-3d; max-width:83%; display:inline-block; border-radius: 40px; border-top-left-radius: 40px; border-top-right-radius: 40px; border-bottom-right-radius: 40px;
+   					 border-bottom-left-radius: 40px;">
+				<img src="https://i.imgur.com/yngBhkx.png" 
+					loading="eager" sizes="(max-width: 479px) 68vw, (max-width: 767px) 67vw, (max-width: 991px) 434.24713134765625px, (max-width: 1919px) 27vw, 370.553955078125px" 
+					srcset="https://149645218.v2.pressablecdn.com/wp-content/uploads/2020/09/Copy-of-SAFAF-2X1-images-2020-09-18T173938.309.jpg 500w, 
+					https://149645218.v2.pressablecdn.com/wp-content/uploads/2020/09/Copy-of-SAFAF-2X1-images-2020-09-18T173938.309.jpg 742w" alt="Video Creator - Creator X Webflow Template" 
+					class="image home-about-2" style="will-change: transform; transform: translate3d(0px, 3.286px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); 
+					transform-style: preserve-3d; display:inline-block; position: absolute; left: 0px; bottom: 0px; max-width: 64%; border-radius: 32px; box-shadow: 0 4px 54px 0 rgb(0 0 0 / 90%);">
+			</div>
+		</div>
+		</div>
+		</section>
+  	</div>
+</div>
+
 
 <!-- Container (Portfolio Section) -->
 <!-- <div class="w3-content w3-container w3-padding-64" id="portfolio">
