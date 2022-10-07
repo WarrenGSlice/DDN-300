@@ -17,14 +17,14 @@
 <!-- Navbar (sit on top) -->
 <div th:replace="layouts/home-navbar :: home-navbar"></div>
 
-<!-- First Parallax Image with Logo Text -->
-<div class="bgimg-1 w3-display-container w3-padding-64 " id="about" >
+<!-- First Parallax Image with Logo Text -Large Screens-->
+<div class="bgimg-1 w3-display-container w3-padding-64 w3-hide-small" id="about" >
 	<div class="ajm-1">
 		<div class="w3-row w3-content">
     		<div class="w3-col m6 w3-center w3-padding-64">
     			<br><br><br>
       			<p style="color:black; font-weight:bold"><b></b></p><br>
-      			<img src="https://i.imgur.com/yngBhkx.png  "class="w3-round w3-image " alt="Photo of Me" width="222" height="74">
+      			<img src="https://i.imgur.com/yngBhkx.png  "class="w3-round w3-image w3-responsive " alt="Photo of Me" width="222" height="74">
       			<br><br>
       			<p style="color:black; font-weight:bold; font-size:1.25vw"><b><i class="fa fa-user w3-margin-right"></i>Jay Jellum</b></p><br>
     		</div>
@@ -34,10 +34,10 @@
     			<br><br><br><br>
     			<h1 class="w3-animate-opacity w3-center" style="color:black; font-weight:bolder; font-size:3vw">About Jay</h1>
     			<br><br>
-      			<p class="w3-right-align" style="color:black; font-weight:bold">Lorem ipsum dolor sit amet, consectetur adipiscing 
-      			elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
-      			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure 
-      			dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p>
+      			<p class="w3-right-align w3-justify w3-hide-small" style="color:black; font-weight:bold">Jay Jellum is an author, comic developer and content creator.
+      			Jay is currently developing the book titled "The Cradle of Existence". Some of Jays biggest influnces are: Neil Gaiman and Stephen King.
+      			One of Jay's best traits is his sense of humor. The Genre Jay writes is mostly Horror, Fantasy Adventure and yet he is able to brillantly add
+      			his sense of humor into his creations. </p>
       			<br><br><br>
       			<a style="z-index:1;color:black;text-align:center" href="#readmore">Read More..</a>
     		</div>
@@ -45,6 +45,34 @@
 	</div>
 </div>
 
+<!-- First Parallax Image with Logo Text Small Screens-->
+<div class="bgimg-1 w3-display-container w3-padding-64 w3-hide-medium w3-hide-large" id="about" >
+	<div class="ajm-1" style="background-size:cover">
+		<div class="w3-row w3-content">
+    		<div class="w3-display-middle w3-center w3-padding-64">
+    			
+    			<h1 class="w3-animate-opacity w3-center" style="color:black; font-weight:bolder; font-size:48px">About Jay</h1><br><br>
+      			<p style="color:black; font-weight:bold"><b></b></p><br>
+      			<img src="https://i.imgur.com/yngBhkx.png  "class="w3-round w3-align-center w3-image w3-responsive " alt="Photo of Me" width="111" height="37" style="width:125%">
+      			<br><br>
+      			<p style="color:black; font-weight:bold; font-size:32px"><b><i class="fa fa-user w3-margin-right"></i>Jay Jellum</b></p><br>
+    		</div>
+
+    		<!--  Hide this text on small devices -->
+    		<div class="w3-col m6 w3-hide-small w3-padding-64 w3-padding w3-center" style="font-weight:bold">
+    			<br><br><br><br>
+    			<h1 class="w3-animate-opacity w3-center" style="color:black; font-weight:bolder; font-size:3vw">About Jay</h1>
+    			<br><br>
+      			<p class="w3-right-align w3-justify w3-hide-small" style="color:black; font-weight:bold">Jay Jellum is an author, comic developer and content creator.
+      			Jay is currently developing the book titled "The Cradle of Existence". Some of Jays biggest influnces are: Neil Gaiman and Stephen King.
+      			One of Jay's best traits is his sense of humor. The Genre Jay writes is mostly Horror, Fantasy Adventure and yet he is able to brillantly add
+      			his sense of humor into his creations. </p>
+      			<br><br><br>
+      			<a style="z-index:1;color:black;text-align:center" href="#readmore">Read More..</a>
+    		</div>
+  		</div>
+	</div>
+</div>
 <!-- Container (About Section) -->
 <!-- <div class="w3-content w3-container w3-padding-64 " id="about">
   <h3 class="w3-center"style="background:black; color:white; font:bold; font-size:36px" >ABOUT OUR SOLUTION</h3>
@@ -97,7 +125,7 @@
     Orders Delivered with our solution
   </div>
 </div> -->
-<div class="w3-row w3-center w3-black w3-padding-14" style="border-bottom: 3px solid white;border-top:3px solid white;" id="readmore">
+<div class="w3-row w3-center w3-black w3-padding-14 w3-hide-small" style="border-bottom: 3px solid white;border-top:3px solid white;" id="readmore">
   		<div class="w3-third w3-section">
     	<span class="w3-xlarge"></span><br>
   		</div>
@@ -110,8 +138,50 @@
   		</div>
 
 </div>
+
+<div class="w3-row w3-center w3-black w3-hide-large w3-hide-medium" style="border-bottom: 3px solid white;border-top:3px solid white;">
+
+  		<div class="w3-third w3-section">
+    	<span class="w3-xxlarge w3-wide" style="font-weight:bold">ABOUT JAY</span><br>
+
+  		</div>
+
+
+</div>
 <!-- Second Parallax Image with Portfolio Text -->
 <div class="bgimg-2 w3-display-container ">
+	<div class="ajc-2 w3-content w3-padding-64">
+		<div class="w3-content w3-margin w3-row-padding w3-display-container">
+			<p class="w3-center" style="color:white; font-weight:bold"><em>Here is some more info on Jay.<br> Enjoy!</em></p><br>
+			<p class="w3-justify" style="color:white; text-indent:5%"><em> Jay currently resides in Longview Washington with his wife and children.
+			He has been writing for several years now and is on the precipice of his first published book. In his spare time he likes
+			to play video games, read, and go on picnics with his family. </em></p><br>
+			<p class="w3-justify" style="color:white; text-indent:5%"><em> Jay's biggest influences are Stephen King and Neil Gaimen. They are famous
+			for their epic fantasy, horror and adventure stories. Their plots are known to be incredibly creative and leave the reader
+			wanting for me. Jay's writing style is very similiar although more closely resembles Neil Gaimen. Jay of course adds to this
+			with his own unique writing style and personality. Jay is famous for his sense of humor and creatively. He is also a fan of
+			Lovecraft and his books often include creatures and entities that are like something out of a Lovecraft novel. He has even
+			adopted the Lovecraft symbol and changed it slightly for the mock cover of his book "The Cradle of Existence". </em></p><br>
+			<p class="w3-justify" style="color:white;text-indent:5%"><em> Eventually Jay's website is going to be for everything he writes
+			and will all exist under the umbrella of this website. Currently the book that Jay is writing now is about a boy who is visited
+			in his dreams and given a magical pencil that can create what he draws in the material world and an angel who recruits some damaged
+			fellow to murder this character. The Baddie fights the main character and angels show up to pursuade him against his actions. 
+			Eventually we learn what is truely at stake in this epic battle, the entire world! Find out how it ends and buy the book Today! </em></p><br>
+			<p class="w3-justify" style="color:white;text-indent:5%"><em> This is just a small example of the writing in one of Jay's Books.
+			This will be his magnum opus, his dark tower. The character that is going to be in all of the books is called the old one
+			and there is a lot of back story. Basically something will happen to connect all the universes and certain gods of other mythos
+			make it through to the different realms and reak havic with the different characters in the different books. They will al have
+			different plot lines, but have some parallels that connect them altogether. </em></p><br>
+			<p class="w3-justify" style="color:white;text-indent:5%"><em> We are all very excited about where this journey is headed
+			and we would be pleased to have you join along for the ride. Jay is a good man, a good soul and we all look forward to watching
+			him grow, learn and succeed along this journey. Thank you so much for visiting this page and helping to support us. Please feel
+			free to reach out to Jay and let him know what you think. You, the fans, are everything and we love you! <3 </em></p><br>
+			<p class="w3-justify w3-center" style="color:white;"><em> Sincerely,  </em></p>
+			<p class="w3-justify w3-center" style="color:white;text-indent:15%;font-weight:bold"><em> Jay Jellum </em></p><br>
+		</div>
+	</div>
+
+
   <div class="w3-display-middle">
     <span class="w3-xxlarge w3-text-black w3-wide"style="color:black; font-weight:bold">  </span>
   </div>
@@ -170,8 +240,12 @@
   </div>
 </div>
 
-<!-- Third Parallax Image with Portfolio Text -->
-<div class="bgimg-3 w3-display-container  ">
+<div class="w3-row w3-center w3-black w3-padding-14 " style="border-bottom: 3px solid white;">
+
+</div>
+
+<!-- Third Parallax Image with Portfolio Text - Large Screens-->
+<div class="bgimg-3 w3-display-container w3-hide-small ">
   	<div class="ajc-1" >
   		<br><br><br><br><br><br><br><br><br>
   		<div class="row w3-margin ">
@@ -182,11 +256,11 @@
       				
       				<div class="container1">
       					<img src="https://i.imgur.com/X16tJbU.jpg" alt="Home Page" style="width:100%">
-        				<h2 class="w3-text-black" style="font-size:2.3vw; font-weight:bolder">Travel Home...</h2>
+        				<h2 class="w3-text-gold" style="font-size:2.3vw; font-weight:bolder">Travel Home...</h2>
 						<br>
 				        <p class="w3-text-white">Abra Kadabra! You have magically transported back to the home page</p>
 				        <p></p>
-				        <p ><button onclick="location.href='/'" class="button w3-gold w3-text-black w3-hover-dark-gray" style="font-weight:bolder; font-size:1.2vw ">Home</button></p>
+				        <p ><button onclick="location.href='/'" class="button w3-gold w3-text-black w3-hover-black" style="font-weight:bolder; font-size:1.2vw ">Home</button></p>
       				</div>
     			</div>
   			</div>
@@ -195,12 +269,12 @@
 					
 					<div class="container1">
 						<img  src="https://i.imgur.com/WIUYXDe.jpg" alt="Contact Us" style="width:74.7%; display:block;margin-left:auto;margin-right:auto  ">
-						<h2 class="w3-text-black" style="font-size:2.3vw; font-weight:bolder">Media Blitz</h2>
+						<h2 class="w3-text-gold" style="font-size:2.3vw; font-weight:bolder">Media Blitz</h2>
 						<br>
 				        <p class="w3-text-white">We want to hear your thoughts. Yes, all of them!</p>
 				        <p></p>
 				        <br>
-				        <p ><button onclick="location.href='/contactus'" class="button w3-gold w3-text-black w3-hover-dark-gray" style="font-weight:bolder; font-size:1.2vw ">Contact Us</button></p>
+				        <p ><button onclick="location.href='/contactus'" class="button w3-gold w3-text-black w3-hover-black" style="font-weight:bolder; font-size:1.2vw ">Contact Us</button></p>
 				 	</div>
 				</div>
 			</div>
@@ -209,12 +283,69 @@
       				
       				<div class="container1">
       					<img src="https://i.imgur.com/aXucWVl.png" alt="Other Works" style="width:50.3%; display:block;margin-left:auto;margin-right:auto  ">
-        				<h2 class="w3-text-black" style="font-size:2.3vw; font-weight:bolder">Future Books...</h2>
+        				<h2 class="w3-text-gold" style="font-size:2.3vw; font-weight:bolder">Future Books...</h2>
 						<br>
 				        <p class="w3-text-white">Your future is not yet written, but you can check out a few possibilities</p>
 				        <p></p>
-				        <p ><button onclick="location.href='/otherworks'" class="button w3-gold w3-text-black w3-hover-dark-gray" style="font-weight:bolder; font-size:1.2vw ">Other Works</button></p>
+				        <p ><button onclick="location.href='/otherworks'" class="button w3-gold w3-text-black w3-hover-black" style="font-weight:bolder; font-size:1.2vw ">Other Works</button></p>
         				<a class="next" onclick="plusSlides(1)">&#10095;</a>
+      				</div>      				
+    			</div>    			
+  			</div>  			
+		</div>
+  		<div style="text-align:center">
+  			<span class="dot" onclick="currentSlide(1)"></span>
+  			<span class="dot" onclick="currentSlide(2)"></span>
+  			<span class="dot" onclick="currentSlide(3)"></span>
+		</div>
+  	</div>
+</div>
+
+<!-- Third Parallax Image with Portfolio Text - Small Screens-->
+<div class="bgimg-3 w3-display-container w3-hide-medium w3-hide-large " style="height:175%">
+  	<div class="ajc-1" >
+  		<br><br>
+  		<div class="row w3-margin ">
+  			<div class="w3-col m4" >
+  				<a class="prev w3-hide-small" onclick="plusSlides(-1)">&#10094;</a>
+  				
+    			<div class="w3-card" style="margin: 32px; ">
+      				
+      				<div class="container1">
+      					<img src="https://i.imgur.com/X16tJbU.jpg" alt="Home Page" style="width:100%">
+        				<h2 class="w3-text-gold" style="font-size:32px; font-weight:bolder">Travel Home...</h2>
+						<br>
+				        <p class="w3-text-white">Abra Kadabra! You have magically transported back to the home page</p>
+				        <p></p>
+				        <p ><button onclick="location.href='/'" class="button w3-gold w3-text-black w3-hover-black" style="font-weight:bolder; font-size:28px ">Home</button></p>
+      				</div>
+    			</div>
+  			</div>
+  			<div class="w3-col m4">
+			    <div class="w3-card" style="margin: 32px ">
+					
+					<div class="container1">
+						<img  src="https://i.imgur.com/WIUYXDe.jpg" alt="Contact Us" style="width:74.7%; display:block;margin-left:auto;margin-right:auto  ">
+						<h2 class="w3-text-gold" style="font-size:32px; font-weight:bolder">Media Blitz</h2>
+						<br>
+				        <p class="w3-text-white">We want to hear your thoughts. Yes, all of them!</p>
+				        <p></p>
+				        <br>
+				        <p ><button onclick="location.href='/contactus'" class="button w3-gold w3-text-black w3-hover-black" style="font-weight:bolder; font-size:28px ">Contact Us</button></p>
+				 	</div>
+				</div>
+			</div>
+  			<div class="w3-col m4">
+    			<div class="w3-card" style="margin: 32px">
+      				
+      				<div class="container1">
+      					<img src="https://i.imgur.com/aXucWVl.png" alt="Other Works" style="width:50.3%; display:block;margin-left:auto;margin-right:auto  ">
+        				<h2 class="w3-text-gold" style="font-size:32px; font-weight:bolder">Future Books...</h2>
+						<br>
+				        <p class="w3-text-white">Your future is not yet written, but you can check out a few possibilities</p>
+				        <p></p>
+				        <p ><button onclick="location.href='/otherworks'" class="button w3-gold w3-text-black w3-hover-black" style="font-weight:bolder; font-size:28px ">Other Works</button></p>
+        				<a class="next w3-hide-small" onclick="plusSlides(1)">&#10095;</a>
       				</div>      				
     			</div>    			
   			</div>  			
@@ -262,7 +393,7 @@
 </div> -->
 
 <!-- Footer -->
-<footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
+<footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off" style="border-top:3px solid white;">
   <a href="#about" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>Back to Top</a>
   <div class="w3-xlarge w3-section">
     <i class="fa fa-facebook-official w3-hover-opacity"></i>
@@ -289,7 +420,7 @@ window.onscroll = function() {myFunction()};
 function myFunction() {
     var navbar = document.getElementById("myNavbar");
     if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-        navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
+        navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-black";
     } else {
         navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
     }

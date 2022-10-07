@@ -21,17 +21,17 @@ body, html {
 
 /* First image (Logo. Full height) */
 .bgimg-1 {
-  background-image: url('https://i.imgur.com/WIUYXDe.jpg');
+  background-image: url('https://wallpaperaccess.com/full/4218988.jpg');
   height:100%;
   width:100%;
-  margin-top: 50px;
+
 
 }
 
 /* Second image (Portfolio) */
 .bgimg-2 {
-  background-image: url("https://i.imgur.com/3RsCVIP.png");
-  min-height: 200%;
+  background-image: url("https://wallpaperaccess.com/full/4218988.jpg");
+  min-height: 100%;
 }
 
 /* Third image (Contact) */
@@ -50,6 +50,16 @@ body, html {
 	background-position: center;
 	background-repeat:no-repeat;
 }
+/* Container For About text*/
+.ajc-2{
+	background-image: url("/images/more%20grey.png");
+	height:100%;
+	width:100%;
+    background-size: 98% 92%;
+	background-position: center;
+	background-repeat:no-repeat;
+}
+
 /* Container For About Jay main image container*/
 .ajm-1{
 	background-image: url("https://i.imgur.com/NXZR5O4.png");
