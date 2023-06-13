@@ -490,8 +490,8 @@ h5 {
 		padding-right: 2em;
 	}
 	.vidvid{
-		width: 75%;
-		right:-11%;
+		width: 100%;
+		right:5%;
 	}
 }
 @media screen and (max-width: 736px){
@@ -515,8 +515,8 @@ h5 {
 		margin-bottom: 2em;
 	}
 	.vidvid{
-		width: 75%;
-		right:-11%;
+		width: 100%;
+		right:5%;
 	}
 }
 
