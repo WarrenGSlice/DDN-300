@@ -1,9 +1,10 @@
 package com.test;
 
-import org.springframework.boot.SpringApplication;
-import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.context.annotation.ComponentScan;
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.List;
 
+import org.springframework.boot.SpringApplication;
 import org.springframework.boot.actuate.autoconfigure.endpoint.web.CorsEndpointProperties;
 import org.springframework.boot.actuate.autoconfigure.endpoint.web.WebEndpointProperties;
 import org.springframework.boot.actuate.autoconfigure.web.server.ManagementPortType;
@@ -22,7 +23,6 @@ import org.springframework.context.annotation.ComponentScan;
 import org.springframework.core.env.Environment;
 import org.springframework.util.StringUtils;
 
-
 //Inializes the Web Application
 @ComponentScan({"com.test"})
 @SpringBootApplication
@@ -31,18 +31,7 @@ public class WebsiteTestPageApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(WebsiteTestPageApplication.class, args);
 	}
-
-	/**
-	 * Allows Swagger-Ui to Operate without throwing an MVC error
-	 * @param webEndpointsSupplier - Web Endpoints Supplier
-	 * @param servletEndpointsSupplier - Servlet Endpoints Supplier
-	 * @param controllerEndpointsSupplier - Controller End Points Supplier
-	 * @param endpointMediaTypes - End Point Media Types
-	 * @param corsProperties - Cors Properties
-	 * @param webEndpointProperties - Web End Points Properties
-	 * @param environment - Environment
-	 * @return WebMvcEndpointHandlerMapping, EndpointLinksResolver
-	 */
+	
 	@SuppressWarnings("unchecked")
 	@Bean
 	public WebMvcEndpointHandlerMapping webEndpointServletHandlerMapping(WebEndpointsSupplier webEndpointsSupplier, ServletEndpointsSupplier servletEndpointsSupplier, ControllerEndpointsSupplier controllerEndpointsSupplier, EndpointMediaTypes endpointMediaTypes, CorsEndpointProperties corsProperties, WebEndpointProperties webEndpointProperties, Environment environment) {
@@ -70,3 +59,4 @@ public class WebsiteTestPageApplication {
 	}
 
 }
+
